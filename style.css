@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 18vh;
+}
+
+body {
+  font-size: 1.6rem;
+  position: relative;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  background-color: #35424a;
+  border-bottom: 2px solid #a9508b;
+  height: 9vh;
+}
+
+ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  
+}
+
+a:focus {
+  color: #a9508b;
+}
+
+.hover-underline {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+
+.hover-underline::after {
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: -2px;
+  left: 0;
+  background-color: #a9508b;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+h2 {
+  color: white;
+  font-size: 3rem;
+}
+
+span {
+  color: #a9508b;
+}
+
+.picture {
+  background-image: url(img/showcase\ \(1\).jpg);
+  height: 50vh;
+  background-position: bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+.picture p {
+  font-size: 2rem;
+}
+
+.come {
+  height: 9vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: #35424a;
+  position: sticky;
+  top: 8.9vh;
+  left: 0;
+}
+
+h3 {
+  color: white;
+  font-size: 2.2rem;
+}
+
+.form-a input {
+  outline: none;
+  width: 15vw;
+  height: 3rem;
+  transition: all 0.3s;
+}
+
+.form-a input:focus {
+  width: 14vw;
+}
+
+.form-a button {
+  width: 5vw;
+  height: 3rem;
+  color: white;
+  background-color: #e84910;
+  border: none;
+  transition: all 0.3s;
+  font-size: 70%;
+}
+
+.form-a button:hover {
+  background-color: wheat;
+  color: #e84910;
+  cursor: pointer;
+}
+
+#root{
+  display: flex;
+  text-align: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  height: 40vh;
+}
+
+#root h4 {
+  font-size: 2rem;
+  padding: 2rem 0;
+}
+
+#root img {
+  width: 15%;
+  transition: all 0.4s;
+}
+
+#root img:hover {
+  transform: scale(1.1);
+}
+
+.root p {
+  font-size: 1.5rem;
+}
+
+#about {
+  display: flex;
+  gap: 3rem;
+  height: 70vh;
+  line-height: 1.5;
+  padding: 3rem;
+  font-size: 1.9rem;
+}
+
+#about h4 {
+  padding: 1.2rem 0;
+  font-size: 2rem;
+}
+
+.left {
+  width: 60%;
+}
+
+.right {
+  padding: 1.4rem;
+  width: 30%;
+  height: 25vh;
+  color: white;
+  background-color: #313b42;
+}
+
+.about-p {
+  margin-top: 1rem;
+  padding: 2rem;
+  color: white;
+  background-color: #333c42;
+}
+
+#finish {
+  padding: 3rem;
+  height: 70vh;
+  display: flex;
+  justify-content: space-between;
+ 
+  font-size: 2.2rem;
+}
+
+#finish .web h4 {
+  padding:1rem 0;
+}
+
+.web {
+  background-color: #4f3e3e09;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 1rem 1rem 1rem rgba(106, 26, 26, 0.3);
+}
+
+.web p {
+  padding-bottom:1.5rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap:1rem;
+  padding:5px ;
+}
+
+.right-2 {
+  height: fit-content;
+  width: 25%;
+  box-shadow: 1rem 1rem 1rem rgb(0, 0, 0, 0.3);
+}
+.left-2{
+  width: 60%;
+}
+
+.box input {
+  width: 80%;
+  height: 3rem;
+  outline: none;
+  padding: 4px;
+}
+
+.box div {
+  width: 80%;
+}
+
+textarea {
+  resize: none;
+  outline: none;
+  width: 80%;
+  height: 8rem;
+}
+
+.box button {
+  width: 6rem;
+  height: 3rem;
+  color: white;
+  background-color: #e84910;
+  border: none;
+  transition: all 0.4s;
+  border: radius 2px; ;
+}
+
+.box button:hover {
+  background-color: wheat;
+  color: #f06633;
+  cursor: pointer;
+}
+footer {
+  text-align: center;
+  background-color: #35424a;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 0;
+  color: white;
+}
+
+footer p {
+  padding-bottom: 1rem;
+}
+
+.footer-image img {
+  width: 10%;
+}
+
